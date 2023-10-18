@@ -1,0 +1,360 @@
+*{
+    box-sizing: border-box;
+    /* box-sizing: content-box; */
+    padding: 0;
+    margin: 0;
+}
+/* .body{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+} */
+.head {
+    display: flex;
+    justify-content: center;
+}
+.one{
+width: 15%;
+}
+.two{
+    width: 75%;
+display: flex;
+justify-content: flex-end;
+    color: grey;
+        /* float: left; */
+        /* transition-duration: 1s;
+            transition-delay: 10s;
+            transition-property: all;
+            transition-timing-function: ease;
+}
+ */
+}
+.navigator{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 20px;
+    
+    }
+    
+
+.navigator li {
+    list-style: none;
+    display: inline-block;
+}
+
+
+/* unvisited link */
+a:link {
+    color: grey;
+}
+/* mouse over element */
+a:hover {
+    color: grey;
+    
+}
+
+/* selected link */
+a:active {
+    color: #3a7ae1;
+}
+
+
+/* img{
+    grid-area: logo;
+    
+    
+    width:270px;
+    height:50px;
+} */
+
+.one1  {
+    
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.image {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    align-self: center;
+    
+}
+.one1 h1 {
+    
+    margin: 10px;
+    align-self: center;
+
+}
+.flex-p p{
+    color: black;
+    width: 40%;
+    padding: 20px;
+    /* align-items: center; */
+    
+}
+.flex-p {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between; 
+    
+}
+.patient-doctor-clinic {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 90%;
+    justify-content: space-around;
+    margin: 10px;
+    /* align-content: flex-start; */
+    height: 300px;
+    /* max-width: 200px; */
+      
+}
+.hospital {
+
+    background-color: rgb(72, 133, 233);
+    width:28%;
+    color: white;
+    margin-left: 10px;
+    padding-left: 30px;
+    border-radius: 6px;
+    display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-ITEMS: flex-start;
+        /* flex-grow: 5; */
+            /* flex-shrink: 2; */
+            /* flex-basis: 20%; */  /* only in flex items it concern widht and height automatically*/
+            /* flex:0 1 100px; flex shorthand =flex grow + flex shrink + flex basis */
+}
+.hospital .A{
+    width: 50px;
+    height: 50px;
+}
+.hospital .C {
+   width: 50%;
+}
+.hospital .D {
+    color: white;
+    text-decoration: underline;
+    background-color: inherit;
+    border-style: hidden;
+}
+.logos {
+
+    
+    
+    
+    margin-left: 10px;
+    padding-left: 10px;
+    
+    display: flex;
+    flex-direction: rows;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height:60PX ;
+}
+.logos .A {
+    width: 20%;
+    padding: 20PX;
+   
+   color: rgb(52, 219, 141); 
+   font-size: 20px;
+   font-weight: bold;
+   
+
+}
+.logos .B {
+    display: FLEX;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    width: 60%;
+    padding: 10PX;
+  
+    
+    
+
+}
+.logos .B a{
+    padding-left: 60px;
+
+
+}
+.logos .B a img {
+    filter: grayscale(100%);
+    
+
+}
+.logos .B a img:hover {
+    filter: grayscale(0%);
+   
+
+
+}
+.world{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+    height: 500px;
+   
+    background-color: aquamarine;
+    
+}
+.world .platform {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-content: space-between;
+    width: 40%;
+   
+    overflow: hidden;
+    /* align-items: flex-start; */
+    
+    
+
+}
+.world .platform .A {
+    padding-top: 30PX;
+    margin-bottom: 30px;
+
+}
+.world .platform .B {
+    width: 70%;
+    padding-top: 30PX;
+    margin-bottom: 70px;
+
+}
+.world .platform .C {
+    padding-top: 30PX;
+    margin-bottom: 30px;
+
+}
+.world .leader{
+    display: FLEX;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: flex-start; */
+    align-content: flex-start;
+    /* align-items: center; */
+    width: 40%;
+   
+}
+.world .leader .A {
+    margin: 20px;
+    width: 30%;
+    background-color: white;
+    height: 200PX;
+}
+.world .leader .B {
+    margin: 20px;
+    height: 200PX;
+    width: 30%;
+    background-color: white;
+}
+
+.world .leader .C {
+    margin: 20px;
+    width: 30%;
+    height: 200PX;
+    background-color: white;
+}
+.world .leader .D {
+    margin: 20px;
+    height: 200PX;
+    width: 30%;
+    background-color: white;
+}
+.world .leader .A .CC {
+    color: black;
+}
+.world .leader .A .BB {
+    color: rgb(56, 227, 22);
+    align-self: center;
+}
+.world .leader .A {
+    display: FLEX;
+    flex-direction: COLUMN;
+    flex-wrap: wrap;
+    /* justify-content: flex-start; */
+    /* align-content: flex-start; */
+    align-items: CENTER;
+    /* align-content: center; */
+    justify-content: space-around;
+    
+
+}
+.paragraph{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.paragraph h1{
+    padding: 10px;
+    margin: 10px;
+    width: 30%;
+    color: rgb(87, 227, 185);
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+
+}
+.paragraph p {
+    padding: 10px;
+    margin: 10px;
+    width: 40%;
+
+}
+.images{
+    display: grid;
+    width: fit-content;
+    height: 40vh;
+    margin-top: 10px;
+    column-gap: 10px;
+    grid-row: 10px;
+    margin-left: 2px;
+        /* height: 40vh; */
+        background-color: #eee;
+        grid-template-columns: repeat(3, 1fr);
+        /* grid-template-columns:repeat(auto-fill,minmax(200px,1fr) ); */
+        grid-template-rows: 300px 300PX 300PX 300PX;
+        grid-template-areas: "image image image"
+            "image image image"
+            "image image image"
+            "image";
+    /* display: flex;
+    flex-direction: ROW;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+    background-color: yellow;
+    height: 900px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%; */
+}
+
+/* .images .A {
+    grid-area: image;
+    background-color: blue;
+    color: white;
+} */
