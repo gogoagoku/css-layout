@@ -3,6 +3,7 @@
     /* box-sizing: content-box; */
     padding: 0;
     margin: 0;
+    
 }
 /* .body{
     width: 80%;
@@ -44,17 +45,17 @@ justify-content: flex-end;
 
 
 /* unvisited link */
-a:link {
+li:link {
     color: grey;
 }
 /* mouse over element */
-a:hover {
-    color: grey;
+li:hover {
+    color: green;
     
 }
 
 /* selected link */
-a:active {
+li:active {
     color: #3a7ae1;
 }
 
@@ -323,38 +324,86 @@ a:active {
     width: 40%;
 
 }
-.images{
-    display: grid;
-    width: fit-content;
-    height: 40vh;
-    margin-top: 10px;
-    column-gap: 10px;
-    grid-row: 10px;
-    margin-left: 2px;
-        /* height: 40vh; */
-        background-color: #eee;
-        grid-template-columns: repeat(3, 1fr);
-        /* grid-template-columns:repeat(auto-fill,minmax(200px,1fr) ); */
-        grid-template-rows: 300px 300PX 300PX 300PX;
-        grid-template-areas: "image image image"
-            "image image image"
-            "image image image"
-            "image";
-    /* display: flex;
-    flex-direction: ROW;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
+.parent{
     
-    background-color: yellow;
-    height: 900px;
     width: 80%;
     margin-left: 10%;
-    margin-right: 10%; */
+    margin-right: 10%;
+    height: 1400px;
+    display: grid;
+    grid-template-columns:33% 33% 33% ;
+    grid-template-rows: 350px 350px 350px 350px;
+    
+     justify-content: space-between;
+    align-content: space-around; 
+   
+    
 }
 
-/* .images .A {
-    grid-area: image;
-    background-color: blue;
-    color: white;
-} */
+.parent div img{
+    padding: 10px;
+    width: 300px;
+    height: 300px;
+}
+.parent .A{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    /* align-content: space-between; */
+    justify-content:flex-start ;
+    align-items: flex-end;
+}
+.parent .A img:hover {
+box-shadow: 1px 1px 5px 3px rgb(175, 159, 159)  ;
+
+
+
+}
+.parent .A button {
+    background-color: rgb(35, 77, 246);
+    border-radius: 3px;
+}
+.parent .A .child {
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 300px;
+    font-family: 'Cairo Play', sans-serif;
+    
+}
+.parent .A .child figcaption {
+
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    
+       
+}
+.parent .A .child button {
+
+    margin-right: 10px;
+    color:white;
+   
+        
+}
+button:hover{
+    cursor: pointer;
+    
+ 
+
+}
+.foot a{
+    text-decoration: none;
+    color: rgb(80, 150, 231);
+}
+.foot a:hover{
+    text-decoration-color: rgb(35, 77, 246);
+        text-decoration: underline;
+
+}
+    
+    
+
+
