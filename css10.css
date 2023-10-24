@@ -5,11 +5,10 @@
     margin: 0;
     
 }
-/* .body{
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-} */
+:root{
+    --mainColor:blue;
+
+}
 .head {
     display: flex;
     justify-content: center;
@@ -41,6 +40,8 @@ justify-content: flex-end;
 .navigator li {
     list-style: none;
     display: inline-block;
+    transition-duration: .5s;
+    transition-delay: .5s;
 }
 
 
@@ -327,12 +328,13 @@ li:active {
 .parent{
     
     width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
+    /* margin-left: 10%;
+    margin-right: 10%; */
     height: 1400px;
     display: grid;
     grid-template-columns:33% 33% 33% ;
     grid-template-rows: 350px 350px 350px 350px;
+    gap: 10px 10px;
     
      justify-content: space-between;
     align-content: space-around; 
@@ -354,13 +356,14 @@ li:active {
     align-items: flex-end;
 }
 .parent .A img:hover {
-box-shadow: 1px 1px 5px 3px rgb(175, 159, 159)  ;
 
+    box-shadow: 1px 1px 5px 3px rgb(175, 159, 159)  ;
+    transition-duration: .5s;
 
 
 }
 .parent .A button {
-    background-color: rgb(35, 77, 246);
+    background-color: var(--mainColor);
     border-radius: 3px;
 }
 .parent .A .child {
@@ -396,10 +399,10 @@ button:hover{
 }
 .foot a{
     text-decoration: none;
-    color: rgb(80, 150, 231);
+    color:var(--mainColor);
 }
 .foot a:hover{
-    text-decoration-color: rgb(35, 77, 246);
+    text-decoration-color: var(--mainColor);
         text-decoration: underline;
 
 }
